@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Security Mastery — Zero to Blockchain</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Unbounded:wght@300;400;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="security/styles.css">
+</head>
+<body>
+
+<!-- ══ HERO ════════════════════════════════════════════════ -->
+<section class="hero" id="hero">
+  <div class="hero-glow"></div>
+  <div class="hero-ring"></div>
+  <div class="hero-ring"></div>
+  <div class="hero-ring"></div>
+
+  <div class="hero-label">Python Security Engineering</div>
+  <h1>
+    <div class="line1">ZERO TO</div>
+    <div class="line2">BLOCKCHAIN</div>
+  </h1>
+  <p class="hero-sub">
+    Master all 7 defence layers with Python — from absolute beginner<br>
+    to smart contract auditing, zero-knowledge proofs &amp; elite pen-testing.
+  </p>
+
+  <button class="start-btn" onclick="startApp()">BEGIN YOUR JOURNEY →</button>
+
+  <div class="hero-stats">
+    <div class="stat">
+      <div class="stat-num">11</div>
+      <div class="stat-label">Phases</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">7</div>
+      <div class="stat-label">Security Layers</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">22+</div>
+      <div class="stat-label">Code Examples</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">Python</div>
+      <div class="stat-label">Language</div>
+    </div>
+  </div>
+
+  <div class="layer-diagram">
+    <div class="layer-diagram-title">The 7-Layer Defence Model</div>
+    <div class="layers-stack">
+      <div class="layer-row" style="--lc:#38bdf8">Layer 1 · Network<span>CORS · HTTPS · Firewall</span></div>
+      <div class="layer-row" style="--lc:#34d399">Layer 2 · Authentication<span>JWT · Google OAuth · 2FA</span></div>
+      <div class="layer-row" style="--lc:#a78bfa">Layer 3 · Authorization<span>RBAC · Role Checking · IDOR</span></div>
+      <div class="layer-row" style="--lc:#fb923c">Layer 4 · Rate Limiting<span>Brute-Force · Account Lockout</span></div>
+      <div class="layer-row" style="--lc:#f43f5e">Layer 5 · Input<span>Validation · SQLi · XSS · CSRF</span></div>
+      <div class="layer-row" style="--lc:#facc15">Layer 6 · Data<span>AES-256 · bcrypt · Argon2 · HMAC</span></div>
+      <div class="layer-row" style="--lc:#c084fc">Layer 7 · Monitoring<span>Audit Logs · Alerts · SIEM</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ APP ═════════════════════════════════════════════════ -->
+<div id="app">
+
+  <!-- Mobile hamburger -->
+  <button class="menu-toggle" onclick="toggleSidebar()">☰ PHASES</button>
+
+  <!-- Top bar (desktop) -->
+  <div class="topbar">
+    <div class="topbar-left">
+      <div>
+        <div class="topbar-phase-label" id="topbarLabel">PHASE 00 · ABSOLUTE BEGINNER</div>
+        <div class="topbar-phase-title" id="topbarTitle">Security Mindset</div>
+      </div>
+    </div>
+    <div class="topbar-right">
+      <span class="topbar-progress-text" id="topbarPct">0 / 10</span>
+      <div class="topbar-bar-wrap">
+        <div class="topbar-bar-fill" id="topbarFill" style="width:0%"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="layout">
+    <!-- Sidebar -->
+    <nav class="sidebar" id="sidebar">
+      <div class="sidebar-logo">
+        <div class="sidebar-logo-text">SEC MASTERY</div>
+        <div class="sidebar-logo-sub">7 LAYERS → BLOCKCHAIN</div>
+      </div>
+      <div class="progress-overall">
+        <div class="prog-label">Overall Progress</div>
+        <div class="prog-bar-wrap">
+          <div class="prog-bar-fill" id="progFill" style="width:0%"></div>
+        </div>
+        <div class="prog-text" id="progText">Phase 0 of 10</div>
+      </div>
+      <div id="phaseNav"></div>
+    </nav>
+
+    <!-- Main content -->
+    <main class="content" id="content"></main>
+  </div>
+</div>
+
+<script src="security/phases.js"></script>
+<script src="security/app.js"></script>
+</body>
+</html>
